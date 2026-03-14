@@ -1,278 +1,278 @@
-# Paid.ai & Outcome-Based Pricing for AI Agents
+# Paid.ai 与 Outcome-Based Pricing 深度研究
 
-> Why traditional SaaS pricing fundamentally fails for agents, and who's building the replacement.
+> 为什么传统 SaaS 定价对 AI Agent 根本不适用，以及谁在构建替代方案。
 
-## 1. Paid.ai Company Deep Dive
+## 1. Paid.ai 公司深度研究
 
-### Founder & Origins
+### 创始人与背景
 
-**Manny Medina** — former CEO and co-founder of **Outreach**, built to **$4.4B valuation**, 6,000 customers, **$250M ARR**. Launched Paid on March 25, 2025.
+**Manny Medina** — 前 **Outreach** CEO 兼联合创始人，将 Outreach 做到 **$4.4B 估值**、6,000 客户、**$250M ARR**。2025 年 3 月 25 日推出 Paid。
 
-**Co-founders:**
-- **Manoj Ganapathy** — serial founder, previously built billing systems at Salesforce
-- **Raj Dosanjh** — early Palantir
-- **Arnon Shimoni** — early Pleo (European fintech)
+**联合创始人：**
+- **Manoj Ganapathy** — 连续创业者，曾在 Salesforce 构建计费系统
+- **Raj Dosanjh** — 早期 Palantir
+- **Arnon Shimoni** — 早期 Pleo（欧洲金融科技）
 
-| Detail | Data |
-|--------|------|
-| Founded | 2025 |
-| HQ | London, UK |
-| Team | 24 employees |
-| Notable investor | Pat Grady (Sequoia Capital) |
+| 详情 | 数据 |
+|------|------|
+| 成立时间 | 2025 |
+| 总部 | 伦敦 |
+| 团队 | 24 人 |
+| 知名投资人 | Pat Grady (Sequoia Capital) |
 
-### Funding: $33.3M Total
+### 融资：总计 $33.3M
 
-| Round | Amount | Lead |
-|-------|--------|------|
+| 轮次 | 金额 | 领投 |
+|------|------|------|
 | Pre-seed | ~$11.7M | EQT Ventures |
-| Seed | $21.6M (oversubscribed) | Lightspeed Venture Partners |
-| Total | **$33.3M** | + FUSE, EQT, Sequoia |
+| Seed | $21.6M（超募） | Lightspeed Venture Partners |
+| 总计 | **$33.3M** | + FUSE, EQT, Sequoia |
 
-### What Paid.ai Builds
+### Paid.ai 做什么
 
-Positions itself as **"the de facto Stripe or Adyen for the AI agent economy"** — billing infrastructure, not a marketplace. Drop-in SDK, a few lines of code.
+定位为 **"AI Agent 经济的 Stripe 或 Adyen"** — 计费基础设施，不是 marketplace。Drop-in SDK，几行代码即可集成。
 
-**Five Core Capabilities:**
+**五大核心能力：**
 
-1. **Customer Value Proofs ("Value Receipts")** — Branded portals showing what the AI agent accomplished: time saved, cost savings, risk avoided, revenue generated, ROI%. Goes beyond invoices to demonstrate impact.
+1. **客户价值证明 ("Value Receipts")** — 品牌化门户，展示 AI agent 实际完成了什么：节省时间、降低成本、规避风险、产生收入、ROI%。超越发票，证明影响力。
 
-2. **Custom Pricing Configuration** — No-code setup for credits-based, usage-based, outcome-based, or hybrid pricing. Deploy per-customer pricing within minutes.
+2. **自定义定价配置** — 无代码设置 credits、usage-based、outcome-based 或混合定价。分钟级上线每客户定价。
 
-3. **Outcome-Based & Hybrid Models** — Replace seat-based with: revenue sharing, success fees, per-resolution, per-outcome.
+3. **Outcome-Based 与混合模型** — 替代 seat-based：收入分成、成功费、按解决计费、按结果计费。
 
-4. **Cost Tracking & Attribution** — Real-time telemetry tracking exact costs per agent action, per customer, per model, per tool call. Margin visibility.
+4. **成本追踪与归因** — 实时遥测追踪每个 agent action 的精确成本，按客户、模型、tool call 细分。利润可见性。
 
-5. **AI Business Intelligence** — Dashboard showing revenue, costs, margins per customer/product/agent. Live event stream.
+5. **AI 商业智能** — Dashboard 展示按客户/产品/agent 的收入、成本、利润。实时事件流。
 
-**Paid.ai's own pricing:**
+**Paid.ai 自身定价：**
 
-| Tier | Price | Billing Volume |
-|------|-------|---------------|
-| Free | $0/mo | Up to $100K/year |
-| Grow | $300/mo | Up to $200K |
-| Scale | $600/mo | Up to $500K |
-| Accelerate | $1,000/mo | Up to $1M |
+| 层级 | 价格 | 计费量 |
+|------|------|--------|
+| Free | $0/月 | 年计费 ≤$100K |
+| Grow | $300/月 | ≤$200K |
+| Scale | $600/月 | ≤$500K |
+| Accelerate | $1,000/月 | ≤$1M |
 
-SOC 2, GDPR, HIPAA, ISO 27001 compliant.
+符合 SOC 2、GDPR、HIPAA、ISO 27001 标准。
 
-### The Core Thesis
+### 核心论点
 
-> An AI handling 1,000 support tickets monthly saves $50,000 in labor costs, yet developers charge only $500/month.
+> 一个 AI 每月处理 1,000 个支持工单，节省了 $50,000 的人力成本，但开发者只收 $500/月。
 
-This is the **value capture gap**. Token-based pricing "leaves a mountain of value on the table. It prices the raw material, not the finished product."
+这就是**价值捕获差距**。Token 定价"把大量价值留在了桌上。它定价的是原材料，不是成品。"
 
-### Key Concepts from Paid's Blog
+### Paid Blog 的关键概念
 
-- **"The SaaSpocalypse"** — Seat-based SaaS is dying. 50% of workforce expected to be AI agents by 2030, per-seat pricing collapses.
-- **Credit-Led Growth (CLG)** — New GTM motion replacing PLG and SLG, credits as unit of engagement.
-- **"Human Value Equivalents"** — Anchoring credits to human labor (1 credit = one human task completed).
-- **"Vibe Revenue"** — Critique of companies showing impressive AI top-line with no idea about margins or unit economics.
+- **"SaaSpocalypse"** — Seat-based SaaS 正在消亡。预计到 2030 年 50% 的劳动力将是 AI agent，按座定价将崩溃。
+- **Credit-Led Growth (CLG)** — 取代 PLG 和 SLG 的新 GTM 模式，credits 作为参与和扩展的单位。
+- **"Human Value Equivalents"** — 将 credits 锚定在人类劳动上（1 credit = 一个人类任务完成的价值）。
+- **"Vibe Revenue"** — 批评那些 AI 顶线数字好看但对利润率、单客户成本、可持续单位经济学毫无头绪的公司。
 
-> Sources: [TechCrunch](https://techcrunch.com/2025/03/25/outreach-founder-manny-medina-has-a-new-startup-that-helps-ai-agents-get-paid/) | [Paid Seed Announcement](https://paid.ai/blog/company/paid-raises-21-6-million-seed-round) | [Sequoia Portfolio](https://sequoiacap.com/companies/paid/)
-
----
-
-## 2. Lightspeed's Analysis
-
-### "The AI Agent Economy Has a $19 Trillion Problem"
-
-[Full post](https://lsvp.com/stories/the-ai-agent-economy-has-a-19-trillion-problem-our-investment-in-paid/)
-
-**Key numbers:**
-- **$19.9 trillion** economic opportunity by 2030 (at risk due to pricing infrastructure gap)
-- AI agents could contribute **up to 7% in increased global GDP** by 2030 (Goldman Sachs)
-- **95% of AI pilots fail to get pushed into production** — not because tech doesn't work, but because companies can't quantify ROI
-- Companies implementing Paid saw **20-40% revenue increases** with same underlying technology
-
-**The "Gen AI Paradox":** Impressive pilot results fail to translate into production because **impact and costs cannot be accurately measured** with existing tools.
-
-**Why traditional SaaS fails for agents:**
-- Agents consume computing resources **dynamically** (not fixed seats)
-- They operate **continuously** (24/7, not 9-5)
-- They generate **highly variable business outcomes** based on task complexity
-- A sales AI might generate "$10,000 in pipeline one week and $100,000 the next" yet charges the same monthly fee
-
-### "Billing Infrastructure in the Age of AI Agents"
-
-[Full post](https://lsvp.com/stories/billing-infrastructure-in-the-age-of-co-pilots-and-ai-agents/)
-
-> "The seat-based model once disrupted the perpetual license model, so too will usage/performance pricing disrupt SaaS. In a decade, we may look back at subscription pricing as an anomaly."
-
-**Systemic impact across 7 enterprise systems:**
-
-1. **CRM** — Must track usage telemetry, not just deal stages
-2. **CPQ** — Currently 3-6 months to implement pricing changes; must support per-use, tiered, credits, outcome-based via config not code
-3. **CLM** — Evolving toward autonomous contract review and dynamic negotiation
-4. **Procurement** — Moving from rule-based to intelligent autonomous negotiation
-5. **Billing/Invoicing** — From month-end invoices to real-time usage visibility
-6. **Revenue Management** — Must comply with ASC 606, IFRS 15 in real-time (no more even revenue recognition)
-7. **ERP** — Legacy systems assumed static pricing, simple contracts, minimal mid-stream changes
-
-### Also: TollBit Investment
-
-Lightspeed led **$24M Series A** in TollBit — infrastructure that automatically charges AI developers when their tools use publisher content. Same thesis: **infrastructure for value exchange in AI economy**.
+> Sources: [TechCrunch](https://techcrunch.com/2025/03/25/outreach-founder-manny-medina-has-a-new-startup-that-helps-ai-agents-get-paid/) | [Paid Seed 公告](https://paid.ai/blog/company/paid-raises-21-6-million-seed-round) | [Sequoia Portfolio](https://sequoiacap.com/companies/paid/)
 
 ---
 
-## 3. Outcome-Based Pricing — Deep Analysis
+## 2. Lightspeed 的分析
 
-### How Do You Define an "Outcome"?
+### "$19 万亿的问题"
 
-> "Is resolution a closed ticket, satisfied customer, or retained account? Each definition affects pricing architecture, product development, and customer relationships." — [Sequence](https://sequencehq.com/blog/what-is-outcome-based-pricing)
+[原文链接](https://lsvp.com/stories/the-ai-agent-economy-has-a-19-trillion-problem-our-investment-in-paid/)
 
-**Real-world outcome definitions:**
+**关键数字：**
+- **$19.9T** — 2030 年 Agent 经济规模（因定价基础设施缺失而面临风险）
+- AI Agent 到 2030 年可贡献全球 GDP 增长的 **7%**（Goldman Sachs）
+- **95% 的 AI pilot 未能推向生产** — 不是因为技术不行，而是企业无法量化 ROI
+- 接入 Paid 的企业看到 **20-40% 的收入增长**（底层技术相同）
 
-| Company | Outcome Definition | Price |
-|---------|-------------------|-------|
-| **Intercom Fin** | AI fully resolves customer issue (positive response or no follow-up) | $0.99/resolution |
-| **Zendesk** | AI resolves without human handoff (first in CX, Aug 2024) | $1.50/resolution |
-| **Sierra** | Graduated: simple resolutions vs. complex L2 support. No charge on human handoff | Varies by complexity |
-| **Salesforce Agentforce** | Per conversation + AI Credits system | $2/conversation |
+**"Gen AI 悖论"：** 惊艳的 pilot 结果无法转化为生产部署，因为**影响和成本无法用现有工具精确衡量**。
 
-Salesforce secured **1,000+ paid deals** within weeks, projecting **$4B in 2025 revenue** from Agentforce.
+**为什么传统 SaaS 对 Agent 失效：**
+- Agent **动态消耗**计算资源（不是固定 seat）
+- Agent **持续运行**（24/7，不是 9-5）
+- Agent 产生**高度可变的业务结果**（取决于任务复杂度）
+- 一个销售 AI 可能"一周产生 $10,000 的 pipeline，下一周 $100,000"，但收取相同月费
 
-### How Do You Measure and Verify Outcomes?
+### "AI Agent 时代的计费基础设施"
 
-**Intercom's verification process:** Vector DB search → contextual identification → LLM output → **output revalidation against business rules** → billing. "Full resolution" requires detecting explicit confirmation or absence of follow-up.
+[原文链接](https://lsvp.com/stories/billing-infrastructure-in-the-age-of-co-pilots-and-ai-agents/)
 
-**Required infrastructure** (Metronome):
-- Real-time result tracking via CRM/analytics integrations
-- Impact verification systems
-- Variable billing automation
-- Transparent outcome dashboards
-- Performance-based revenue recognition
+> "Seat-based 模型曾经颠覆了永久授权模型，usage/performance 定价也将颠覆 SaaS。十年后，我们可能会回过头来看，订阅定价只是一个异常时期。"
 
-### Usage-Based vs. Outcome-Based
+**对 7 大企业系统的系统性影响：**
 
-| Dimension | Usage-Based | Outcome-Based |
-|-----------|------------|---------------|
-| Unit | Tokens, API calls, GPU cycles | Resolved tickets, leads, saved hours |
-| Risk | Customer bears (unpredictable bills) | Vendor bears (non-performance = $0) |
-| Alignment | Weak (can bill without value) | Strong (payment = verified value) |
-| Measurement | Easy (count calls) | Hard (define + verify) |
-| Gaming risk | Low | High (agents closing tickets without resolution) |
-| Revenue per value unit | Low (prices commodity) | High (prices finished product) |
+1. **CRM** — 必须追踪使用遥测，而非仅追踪交易阶段
+2. **CPQ** — 目前改价需 3-6 个月；必须支持 per-use、tiered、credits、outcome-based（通过配置而非代码）
+3. **CLM** — 向自主合同审查和动态谈判演进
+4. **Procurement** — 从规则审批走向智能自主谈判
+5. **Billing/Invoicing** — 从月末账单走向实时使用可见性
+6. **Revenue Management** — 必须实时符合 ASC 606、IFRS 15（无法再均匀确认收入）
+7. **ERP** — 遗留系统假设静态定价、简单合同、极少的中途变更
 
-### The Five Challenges
+### 另：TollBit 投资
 
-**1. Attribution — "The Blame Game"**
-When multiple tools, agents, and humans contribute, proving direct causation is hard. Metronome recommends multiple metrics and formal dispute resolution.
-
-**2. Outcome Definition Disputes**
-"Is it meetings booked or successfully completed?" Requires pre-agreed definitions in contracts.
-
-**3. Gaming / Perverse Incentives**
-Agents optimize for measurable metrics, not genuine outcomes. Requires guardrails and quality metrics.
-
-**4. Revenue Unpredictability for Vendors**
-Failed resolution attempts go un-monetized. Why **hybrid models** (base fee + outcome bonus) are emerging as practical standard.
-
-**5. Payment Processing Economics**
-Stripe's 2.9% + $0.30 per transaction is prohibitive at low price points. At $0.99/resolution, fees consume ~60% of revenue. Solutions: monthly aggregation or prepaid credits.
+Lightspeed 还领投了 **TollBit 的 $24M Series A** — 当 AI 工具使用出版商内容时自动收取费用的基础设施。同一论点：**AI 经济中的价值交换基础设施**。
 
 ---
 
-## 4. Competitive Landscape
+## 3. Outcome-Based Pricing — 深度分析
 
-### Outcome-Based Billing Adopters
+### 如何定义"结果"？
 
-| Company | Approach | Price Point |
-|---------|----------|-------------|
-| Paid.ai | Full billing infrastructure ("Stripe for agents") | $0-1K/mo platform fee |
-| Intercom (Fin) | Per-resolution AI pricing | $0.99/resolution |
-| Zendesk | First in CX (Aug 2024) | $1.50/resolution |
-| Sierra | Outcome + consumption hybrid | Graduated by complexity |
-| Salesforce (Agentforce) | Per-conversation + credits | $2/conversation |
-| Forethought | Moving from subscriptions to outcome-based | Charges only on performance |
+> "Resolution 是关闭的工单、满意的客户、还是留存的账户？每种定义都影响定价架构、产品开发和客户关系。" — [Sequence](https://sequencehq.com/blog/what-is-outcome-based-pricing)
 
-### Billing Infrastructure Competitors
+**实际案例中的结果定义：**
 
-| Company | Focus | vs. Paid.ai |
-|---------|-------|------------|
-| Metronome | Usage-based billing, expanding to outcome | Lacks AI-specific features (value receipts, cost tracking) |
-| Sequence | AI/usage billing | Narrower scope |
-| Flexprice | Outcome-based billing | Less ecosystem |
-| Chargebee | Subscription/usage, adding AI playbooks | Legacy architecture |
-| Stripe Billing | General-purpose | No agent-specific features |
+| 公司 | 结果定义 | 价格 |
+|------|----------|------|
+| **Intercom Fin** | AI 完全解决客户问题（正面回应或无后续追问） | $0.99/次解决 |
+| **Zendesk** | AI 无需人工介入即解决（CX 领域首家，2024 年 8 月） | $1.50/次解决 |
+| **Sierra** | 分级：简单解决 vs. 复杂 L2 技术支持。转人工不收费 | 按复杂度分层 |
+| **Salesforce Agentforce** | 按对话 + AI Credits 系统 | $2/次对话 |
 
-### Agent Marketplace Revenue Splits
+Salesforce 数周内签下 **1,000+ 付费客户**，预计 2025 年该业务贡献 **$4B 收入**。
 
-| Platform | Creator Share | Platform Take |
-|----------|--------------|---------------|
+### 如何衡量和验证结果？
+
+**Intercom 的验证流程：** 向量数据库搜索 → 上下文识别 → LLM 输出 → **基于业务规则的输出再验证** → 计费。"完整解决" 需要检测明确的客户确认或无后续追问。
+
+**所需基础设施**（Metronome）：
+- 通过 CRM/分析集成的实时结果追踪
+- 影响验证系统
+- 可变计费自动化
+- 透明的结果 dashboard
+- 基于表现的收入确认
+
+### Usage-Based vs. Outcome-Based 对比
+
+| 维度 | Usage-Based | Outcome-Based |
+|------|------------|---------------|
+| 计价单位 | Token、API 调用、GPU 周期 | 解决的工单、产生的线索、节省的时间 |
+| 风险 | 客户承担（账单不可预测） | 供应商承担（不交付 = 零收入） |
+| 价值对齐 | 弱（可以不产生价值也计费） | 强（付费 = 验证的价值） |
+| 衡量难度 | 低（计数 API 调用） | 高（定义 + 验证结果） |
+| 作弊风险 | 低 | 高（agent 可能关闭工单但不真正解决） |
+| 每价值单位收入 | 低（定价的是商品） | 高（定价的是成品） |
+
+### 五大挑战
+
+**1. 归因 — "甩锅问题"**
+当多个工具、agent 和人类共同贡献结果时，证明直接因果关系很难。Metronome 建议使用多指标和正式的争议解决流程。
+
+**2. 结果定义争议**
+"是预约的会议还是成功完成的会议？" 需要在合同中预先约定定义。
+
+**3. 作弊/扭曲激励**
+Agent 可能优化可衡量的指标，而非真正的结果。需要护栏和质量指标。
+
+**4. 供应商收入不可预测**
+失败的解决尝试消耗资源但不产生收入。这就是为什么**混合模型**（基础费 + 结果奖金）正在成为实际标准。
+
+**5. 支付处理经济学**
+Stripe 每笔 2.9% + $0.30 在低价位时会蚕食利润。$0.99/次解决 时，支付手续费消耗 ~60% 的收入。解决方案：月度汇总计费或预付 credits 系统。
+
+---
+
+## 4. 竞争格局
+
+### Outcome-Based 计费的采用者
+
+| 公司 | 方式 | 价位 |
+|------|------|------|
+| Paid.ai | 完整计费基础设施（"Agent 的 Stripe"） | 平台费 $0-1K/月 |
+| Intercom (Fin) | 按解决计费 | $0.99/次解决 |
+| Zendesk | CX 领域首家（2024 年 8 月） | $1.50/次解决 |
+| Sierra | Outcome + 消耗混合 | 按复杂度分级 |
+| Salesforce (Agentforce) | 按对话 + credits | $2/次对话 |
+| Forethought | 从订阅转向 outcome-based | 仅在有表现时收费 |
+
+### 计费基础设施竞品
+
+| 公司 | 聚焦 | vs. Paid.ai |
+|------|------|------------|
+| Metronome | usage-based 计费，扩展到 outcome | 缺少 AI 特定功能（价值证明、成本追踪） |
+| Sequence | AI/usage 计费 | 范围更窄 |
+| Flexprice | Outcome-based 计费 | 生态更小 |
+| Chargebee | 订阅/usage，增加 AI playbooks | 遗留架构 |
+| Stripe Billing | 通用 | 无 agent 特定功能 |
+
+### Agent Marketplace 分成比例
+
+| 平台 | 创作者份额 | 平台抽成 |
+|------|-----------|---------|
 | Agent37 | 80% | 20% |
 | OpenAI GPT Store | ~70% | ~30% |
 | Anthropic Claude Agent SDK | 50% | 50% |
-| Microsoft Copilot Studio | 97% | 3% flat fee |
+| Microsoft Copilot Studio | 97% | 3% 固定手续费 |
 
-### Outcome-Based in Other Industries
+### 其他行业的 Outcome-Based 模式
 
-Not new — mirrors existing patterns:
-- **Performance marketing**: Pay-per-click, pay-per-acquisition
-- **Success fees**: Investment banking (% of deal value), recruitment (% of first-year salary)
-- **Contingency fees**: Legal industry (% of settlement)
-- **Gain-sharing**: Management consulting (% of cost savings)
-- **PayPal**: Pure outcome-based — you only pay when money moves
+并非新概念 — 有现成参照：
+- **效果营销**：按点击付费、按获客付费
+- **成功费**：投行（交易额的 %）、猎头（首年薪资的 %）
+- **风险代理费**：法律行业（和解金额的 %）
+- **收益分享**：管理咨询（节省成本的 %）
+- **PayPal**：纯 outcome-based — 只在钱动了的时候收费
 
 ---
 
-## 5. Implications for Skill Creator Monetization
+## 5. 对 Skill 创作者变现的启示
 
-### Three Pricing Models for Packaged Skills
+### 打包 Skills 的三种定价模型
 
-1. **Per-invocation (usage-based)**: Creator paid per skill call. Simple but prices the commodity, not the value.
+1. **按调用 (usage-based)**：每次 skill 被调用时创作者获得收入。简单但定价的是商品，不是价值。
 
-2. **Per-outcome (outcome-based)**: Creator paid when skill contributes to successful outcome. Higher revenue per unit but requires verification and attribution.
+2. **按结果 (outcome-based)**：skill 贡献到成功结果时创作者获得收入。每单位收入更高但需要验证和归因。
 
-3. **Hybrid**: Base licensing fee + outcome bonus. E.g., $0.001 per invocation + 10% of attributed value.
+3. **混合**：基础授权费 + 结果奖金。例如 $0.001/次调用 + 归因价值的 10%。
 
-### The Multi-Agent Attribution Problem ("Split the Bill")
+### 多 Agent 归因问题（"谁买单"）
 
-When Agent A (orchestrator) calls Skill B (research) and Skill C (analysis) to produce Outcome D (investment recommendation that makes money)... **who gets credit?**
+当 Agent A（编排者）调用 Skill B（研究）和 Skill C（分析）来产生 Outcome D（赚钱的投资建议）…… **谁该获得功劳？**
 
-This mirrors the **multi-touch attribution problem** in digital marketing — unsolved after 15+ years despite billions spent.
+这映射了数字营销中的**多触点归因问题** — 15 年以上未解决，尽管投入了数十亿。
 
-**Potential approaches:**
+**可能的方法：**
 
-| Approach | How | Pros | Cons |
-|----------|-----|------|------|
-| Last-touch | Final skill gets paid | Simple | Unfair to upstream |
-| Equal split | All skills share equally | Fair-seeming | Ignores differential contribution |
-| Shapley value | Game-theoretic marginal contribution | Theoretically optimal | Computationally expensive |
-| Market-determined | Skills set own per-call prices | Avoids attribution entirely | Doesn't capture outcome upside |
-| Predefined contracts | Pre-negotiated revenue splits | Most practical near-term | Rigid |
+| 方法 | 机制 | 优点 | 缺点 |
+|------|------|------|------|
+| Last-touch | 最终 skill 获得报酬 | 简单 | 对上游不公平 |
+| 平均分配 | 所有 skill 平分 | 看起来公平 | 忽略差异化贡献 |
+| Shapley 值 | 博弈论边际贡献计算 | 理论最优 | 计算昂贵 |
+| 市场定价 | Skill 自己设按调用价格 | 完全避免归因 | 无法捕获 outcome 增值 |
+| 预定义合同 | 预先协商分成比例 | 近期最实际 | 不灵活 |
 
-### What Agent-to-Agent Transactions Need
+### Agent-to-Agent 交易需要什么
 
-- **Standardized outcome definitions**: Machine-readable, agreed before execution
-- **Escrow/settlement infrastructure**: Hold payment until verified, then distribute
-- **Attribution proofs**: Cryptographic or audit-trail evidence of contribution
-- **Dispute resolution**: When agents disagree on outcome achievement
+- **标准化的结果定义**：机器可读，执行前约定
+- **Escrow/结算基础设施**：验证前锁定支付，验证后分发
+- **归因证明**：加密或审计链证据证明哪个 agent/skill 贡献了什么
+- **争议解决**：当 agent 对结果是否达成存在分歧时
 
-This is the **"smart contract" problem** — Paid.ai published "Legal Contracts Built for AI Agents" (their most popular HN submission: 72 points, 45 comments).
+这本质上是**"智能合约"问题** — Paid.ai 发表了 "Legal Contracts Built for AI Agents"（他们 HN 最热帖：72 分，45 评论）。
 
-### Market Signals
+### 市场信号
 
-- Seat-based pricing dropped from **21% to 15%** of companies in 12 months (2024-2025)
-- Outcome-based pricing: **25% higher ROI** vs. flat-fee plans
-- Enterprise AI adoption: **88% in 2025** (up from 78%)
-- AI marketplaces delaying monetization until ~10K MAU show **30% higher long-term growth**
-- Vertical-specific agents: **$2,000/month** vs. $20 for generic tools — **100x premium** for specialization
+- Seat-based 定价从 **21% 降到 15%**（12 个月内，2024-2025）
+- Outcome-based 定价：比固定费方案高 **25% ROI**
+- 企业 AI 采用率：**2025 年 88%**（2024 年 78%）
+- 延迟变现至 ~10K MAU 的 AI marketplace 展示出 **30% 更高的长期增长率**
+- 垂直特定 agent：**$2,000/月** vs. 通用工具 $20 — **100 倍溢价**
 
 ---
 
 ## Sources
 
 - [Paid.ai](https://www.paid.ai)
-- [Lightspeed: $19 Trillion Problem](https://lsvp.com/stories/the-ai-agent-economy-has-a-19-trillion-problem-our-investment-in-paid/)
-- [Lightspeed: Billing Infrastructure in AI Age](https://lsvp.com/stories/billing-infrastructure-in-the-age-of-co-pilots-and-ai-agents/)
-- [TechCrunch: Paid Launch](https://techcrunch.com/2025/03/25/outreach-founder-manny-medina-has-a-new-startup-that-helps-ai-agents-get-paid/)
-- [Paid Seed Announcement](https://paid.ai/blog/company/paid-raises-21-6-million-seed-round)
+- [Lightspeed: $19 万亿的问题](https://lsvp.com/stories/the-ai-agent-economy-has-a-19-trillion-problem-our-investment-in-paid/)
+- [Lightspeed: AI Agent 时代的计费基础设施](https://lsvp.com/stories/billing-infrastructure-in-the-age-of-co-pilots-and-ai-agents/)
+- [TechCrunch: Paid 发布](https://techcrunch.com/2025/03/25/outreach-founder-manny-medina-has-a-new-startup-that-helps-ai-agents-get-paid/)
+- [Paid Seed 公告](https://paid.ai/blog/company/paid-raises-21-6-million-seed-round)
 - [Sequoia Portfolio: Paid](https://sequoiacap.com/companies/paid/)
 - [Sierra: Outcome-Based Pricing](https://sierra.ai/blog/outcome-based-pricing-for-ai-agents)
-- [Chargebee: AI Pricing Playbook](https://blog.chargebee.com/blog/pricing-ai-agents-playbook/)
+- [Chargebee: AI 定价 Playbook](https://blog.chargebee.com/blog/pricing-ai-agents-playbook/)
 - [Metronome: Outcome-Based Pricing](https://metronome.com/blog/outcome-based-pricing)
-- [Sequence: What is Outcome-Based Pricing](https://sequencehq.com/blog/what-is-outcome-based-pricing)
-- [Agent37: How to Charge for AI Agents](https://agent37.com/blog/how-to-charge-for-ai-agents-you-build)
-- [Monetizely: AI Agent Revenue Models](https://getmonetizely.com/articles/how-to-build-effective-revenue-models-for-ai-agent-marketplaces)
-- [Sequoia Podcast: Pricing in the AI Era](https://podcasts.apple.com/us/podcast/get-paid-with-manny-medina/id1792748956)
-- [Lightspeed: TollBit Investment](https://lsvp.com/stories/investing-in-tollbit-the-internets-ai-toll-booth/)
+- [Sequence: 什么是 Outcome-Based Pricing](https://sequencehq.com/blog/what-is-outcome-based-pricing)
+- [Agent37: 如何为 AI Agent 定价](https://agent37.com/blog/how-to-charge-for-ai-agents-you-build)
+- [Monetizely: AI Agent 收入模型](https://getmonetizely.com/articles/how-to-build-effective-revenue-models-for-ai-agent-marketplaces)
+- [Sequoia Podcast: AI 时代的定价](https://podcasts.apple.com/us/podcast/get-paid-with-manny-medina/id1792748956)
+- [Lightspeed: TollBit 投资](https://lsvp.com/stories/investing-in-tollbit-the-internets-ai-toll-booth/)
